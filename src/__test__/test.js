@@ -50,7 +50,6 @@ test('Проверка метода addAll', () => {
     defence: 25,
   },
   ];
-
   expect(recieved).toEqual(expected);
 });
 
