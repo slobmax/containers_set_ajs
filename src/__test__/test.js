@@ -7,15 +7,15 @@ const undead = new Character('Undead', 'Undead');
 const swordsman = new Character('Swordsman', 'Swordsman');
 
 test('Проверка метода add', () => {
-  const recieved = Array.from(team.add(bowman))[0];
-  const expected = {
+  const recieved = Array.from(team.add(bowman));
+  const expected = [{
     name: 'Bowman',
     type: 'Bowman',
     level: 1,
     health: 100,
     attack: 25,
     defence: 25,
-  };
+  }];
   expect(recieved).toEqual(expected);
 });
 
